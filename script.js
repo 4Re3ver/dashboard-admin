@@ -21,10 +21,10 @@ function renderTable() {
         data.forEach((item, index) => {
             tbody.innerHTML += `
                 <tr>
-                    <td><span class="badge bg-primary" style="font-size: 0.9rem;">${item.id}</span></td>
+                    <td><span class="badge bg-primary id-badge">${item.id}</span></td>
                     <td><strong>${item.nama}</strong></td>
                     <td>${item.nim}</td>
-                    <td><span class="badge bg-info">${item.prodi}</span></td>
+                    <td><span class="badge bg-info prodi-badge">${item.prodi}</span></td>
                     <td>
                         <button type="button" class="btn btn-icon btn-edit" onclick="openEdit(${item.id})" title="Edit">
                             <i class="bi bi-pencil-square"></i>

@@ -22,7 +22,7 @@
         <h2 class="text-light text-center py-3">Dashboard</h2>
         <ul>
             <li class="active">📊 Data Mahasiswa</li>
-            <li id="toggleSidebar" style="cursor: pointer;">✕ Tutup Sidebar</li>
+            <li id="toggleSidebar">✕ Tutup Sidebar</li>
         </ul>
     </div>
 
@@ -30,7 +30,7 @@
     <div class="header-section">
         <div class="header-content">
             <div class="header-title">
-                <h1>📚 Dashboard Mahasiswa</h1>
+                <h1>Dashboard Mahasiswa</h1>
                 <p>Kelola data mahasiswa dengan mudah dan efisien</p>
             </div>
             <div class="header-stats">
@@ -54,7 +54,7 @@
 
     <!-- MAIN CONTENT -->
     <div class="main">
-        <div style="margin-bottom: 20px;">
+        <div class="toolbar">
             <button class="btn btn-primary" id="openSidebarBtn">☰ Menu</button>
         </div>
 
@@ -86,18 +86,18 @@
                 <table class="table table-hover mb-0">
                     <thead>
                         <tr>
-                            <th style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff;">ID</th>
-                            <th style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff;">Nama</th>
-                            <th style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff;">NIM</th>
-                            <th style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff;">Prodi</th>
-                            <th style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff;">Aksi</th>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Prodi</th>
+                            <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody id="tableBody"></tbody>
                 </table>
             </div>
-            <div id="emptyState" class="text-center py-5" style="display: none;">
-                <i class="bi bi-inbox" style="font-size: 3rem; color: #ccc;"></i>
+            <div id="emptyState" class="text-center py-5">
+                <i class="bi bi-inbox empty-icon"></i>
                 <p class="text-muted mt-3">Belum ada data mahasiswa</p>
             </div>
         </div>
