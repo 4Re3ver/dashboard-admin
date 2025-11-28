@@ -11,7 +11,7 @@ body {
     color: #2c3e50;
 }
 
-/* Header Section */
+
 .header-section {
     --sidebar-width: 220px;
     background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
@@ -24,7 +24,7 @@ body {
     width: calc(100% - var(--sidebar-width));
 }
 
-/* When sidebar has .hide, move header to full width */
+
 .sidebar.hide + .header-section {
     margin-left: 0;
     width: 100%;
@@ -100,7 +100,7 @@ body {
     font-weight: 700;
 }
 
-/* Badges to match primary color */
+
 .badge.bg-primary {
     background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%) !important;
     color: #fff !important;
@@ -117,7 +117,7 @@ body {
     border-radius: 0.5rem;
 }
 
-/* Sidebar */
+
 .sidebar {
     width: 220px;
     height: 100vh;
@@ -167,7 +167,7 @@ body {
     box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Form styling */
+
 #formInput {
     background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
     padding: 30px;
@@ -200,7 +200,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Button styling */
+
 .btn {
     border-radius: 8px;
     font-weight: 600;
@@ -234,7 +234,7 @@ body {
     color: #fff;
 }
 
-/* Icon circle buttons */
+
 .btn-icon {
     width: 36px;
     height: 36px;
@@ -274,7 +274,7 @@ body {
     box-shadow: 0 0 0 0.2rem rgba(102,126,234,0.25);
 }
 
-/* Main content */
+
 .main {
     margin-left: 220px;
     padding: 30px;
@@ -286,7 +286,7 @@ body {
     margin-left: 0;
 }
 
-/* Card styling */
+
 .card {
     border: 1px solid #e2e8f0;
     border-radius: 12px;
@@ -310,7 +310,6 @@ body {
     padding-bottom: 15px;
 }
 
-/* Table styling */
 .table {
     background: #ffffff;
     border-collapse: collapse;
@@ -351,7 +350,7 @@ body {
     overflow: hidden;
 }
 
-/* Empty state */
+
 #emptyState {
     background: linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
     border-radius: 12px;
@@ -360,7 +359,7 @@ body {
     display: none;
 }
 
-/* Small utility classes moved from inline HTML */
+
 .toolbar {
     margin-bottom: 20px;
 }
@@ -370,12 +369,12 @@ body {
     color: #9ca3af;
 }
 
-/* Small tweaks for header/content spacing when sidebar toggles */
+
 .header-content {
     align-items: center;
 }
 
-/* Optional: spacing for id and prodi badge classes if needed */
+
 .id-badge {
     font-size: 0.9rem;
 }
@@ -383,7 +382,7 @@ body {
     font-size: 0.85rem;
 }
 
-/* Modal styling */
+
 .modal-content {
     border: 1px solid #e2e8f0;
     border-radius: 12px;
@@ -424,7 +423,7 @@ body {
     }
 }
 
-/* Tablet specific adjustments */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .header-section {
         padding: 22px 20px;
@@ -445,7 +444,7 @@ body {
     }
 }
 
-/* Mobile responsive */
+
 @media (max-width: 768px) {
     .sidebar {
         left: -220px !important;
@@ -496,7 +495,7 @@ body {
         padding: 12px;
     }
 
-    /* Extra small screens tweaks */
+   
     @media (max-width: 420px) {
         .header-title h1 {
             font-size: 1rem;
@@ -516,12 +515,12 @@ body {
         }
     }
 
-    /* Form full width di mobile */
+
     #formInput .col-12 {
         width: 100%;
     }
 
-    /* Table responsive di mobile */
+
     .table {
         font-size: 0.9rem;
     }
