@@ -1,4 +1,4 @@
-// Data awal (tanpa database)
+
 let data = [
     { id: 1, nama: "Arifa", nim: 2412345678, prodi: "Teknologi Informasi" },
     { id: 2, nama: "Fitra", nim: 2412345679, prodi: "Arsitektur" },
@@ -51,7 +51,7 @@ function updateHeaderStats() {
 renderTable();
 
 
-// Tambah data
+
 $("#formInput").on("submit", function(e) {
     e.preventDefault();
 
@@ -68,7 +68,7 @@ $("#formInput").on("submit", function(e) {
 });
 
 
-// Buka modal edit
+
 function openEdit(id) {
     const item = data.find(d => d.id === id);
 
@@ -80,7 +80,7 @@ function openEdit(id) {
     new bootstrap.Modal(document.getElementById("editModal")).show();
 }
 
-// Update data
+
 $("#btnUpdate").on("click", function() {
     const id = parseInt($("#editId").val());
     const item = data.find(d => d.id === id);
@@ -94,13 +94,13 @@ $("#btnUpdate").on("click", function() {
 });
 
 
-// Buka modal delete
+
 function openDelete(id) {
     deleteId = id;
     new bootstrap.Modal(document.getElementById("deleteModal")).show();
 }
 
-// Hapus data
+
 $("#btnDeleteConfirm").on("click", function() {
     data = data.filter(item => item.id !== deleteId);
     renderTable();
@@ -109,29 +109,29 @@ $("#btnDeleteConfirm").on("click", function() {
 });
 
 
-// Sidebar toggle dengan jQuery
+
 $(document).ready(function() {
     const $sidebar = $("#sidebar");
     const $main = $(".main");
     const $openSidebarBtn = $("#openSidebarBtn");
     const $toggleSidebarBtn = $("#toggleSidebar");
 
-    // Buka/Tutup sidebar saat klik menu button (desktop & mobile)
+    
     $openSidebarBtn.on("click", function(e) {
         e.stopPropagation();
         const isDesktop = $(window).width() > 768;
         
         if (isDesktop) {
-            // Desktop: toggle hide class
+            
             $sidebar.toggleClass("hide");
             $main.toggleClass("collapsed");
         } else {
-            // Mobile: toggle show class
+            
             $sidebar.toggleClass("show");
         }
     });
 
-    // Tutup sidebar saat klik tombol tutup
+    
     $toggleSidebarBtn.on("click", function(e) {
         e.stopPropagation();
         const isDesktop = $(window).width() > 768;
@@ -144,7 +144,7 @@ $(document).ready(function() {
         }
     });
 
-    // Tutup sidebar saat klik di luar pada mobile
+    
     $(document).on("click", function(event) {
         if ($(window).width() <= 768) {
             if (!$sidebar.is(event.target) && !$sidebar.has(event.target).length && 
@@ -154,7 +154,7 @@ $(document).ready(function() {
         }
     });
 
-    // Reset sidebar saat resize
+    
     $(window).on("resize", function() {
         $sidebar.removeClass("show");
         if ($(window).width() > 768) {
